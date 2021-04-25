@@ -34,7 +34,7 @@ float right = 0;
 float left = 0;
 float step = 80.0;
 int frames = 15;
-int floorSpeed = 0;
+int GS = 0;
 
 float SD = 0;
 
@@ -236,12 +236,12 @@ void draw() {
 //groundhog move
     //soil and stone down
     if (down > 0 && SD > SPACING * -20) {
-      floorSpeed -=1;
+      GS -=1;
       if (down == 1) {
-        SD = round(step/frames * floorSpeed);
+        SD = round(step/frames * GS);
         image(groundhogIdle, groundhogX, groundhogY);
       } else {
-        SD = step/frames * floorSpeed;
+        SD = step/frames * GS;
         image(groundhogDown, groundhogX, groundhogY);
       }
       down -=1;
