@@ -135,7 +135,7 @@ void draw() {
 		// Grass
 		fill(124, 204, 25);
 		noStroke();
-		rect(0, 160 - GRASS_HEIGHT, width, GRASS_HEIGHT);
+		rect(0, 160 - GRASS_HEIGHT + SD, width, GRASS_HEIGHT);
 
 		// Soil - REPLACE THIS PART WITH YOUR LOOP CODE!
     for(int i = 0; i < SOIL_COL; i++){      
