@@ -339,7 +339,7 @@ void keyPressed(){
   if (key == CODED) {
     switch(keyCode) {
     case DOWN:
-      if (groundhogY < 25*SPACING) {
+      if (groundhogY < 5*SPACING) {
         downPressed = true;
         down = 15;
       }
